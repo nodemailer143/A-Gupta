@@ -12,11 +12,21 @@
     <meta name="designer" content="Vishnu Raghav" />
     <meta property="og:title" content="A Gupta's Digital Business Card" />
     <meta property="twitter:title" content="A Gupta's Digital Business Card" />
+
     <script>
       "http" == window.location.href.substr(0, 4) &&
         "/" != window.location.href.slice(-1) &&
         window.location.replace(window.location.href + "/");
     </script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&amp;display=swap"
       rel="stylesheet"
@@ -278,11 +288,18 @@
     <main style="background-color: rgb(255, 255, 255); margin-top: 0px">
       <img id="profilePhoto" src="./photo.jpeg" alt="Photo" />
       <div id="info" class="textColor">
-        <p class="name">A Gupta</p>
-        <!---->
-        <p class="jobtitle">Avdesh Glass &amp; Aluminium Works</p>
-        <p class="bizname">Spl.in : Structure Glazing</p>
-        <p class="bizaddr">
+        <p class="name" style="font-size: 40px; text-align: center; padding: 0">
+          Avdesh Glass <br style="padding: 0; margin: 0" />&<br
+            style="padding: 0; margin: 0"
+          />Aluminium Works
+        </p>
+        <br />
+        <p class="jobtitle" style="font-size: 20px"></p>
+        <p class="bizname" style="font-size: 18px">
+          Spl.in : Structure Glazing
+        </p>
+        <br />
+        <p class="bizaddr" style="font-size: 18px">
           636, Nyay Khand-3, ( Near Vivekanand School ), Indirapuram, Ghaziabad.
           (U.P)
         </p>
@@ -296,45 +313,16 @@
         aria-label="Save Contact"
         style="background-color: rgb(207, 83, 54)"
         href="agupta.vcf"
-        ><div class="icon iconColor">
-          <svg
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-            xml:space="preserve"
-            style="
-              fill-rule: evenodd;
-              clip-rule: evenodd;
-              stroke-linecap: round;
-              stroke-linejoin: round;
-              stroke-miterlimit: 2;
-            "
-          >
-            <path style="fill: none" d="M0 0h24v24H0z"></path>
-            <circle
-              cx="8.5"
-              cy="7"
-              r="4"
-              style="fill: none; stroke: #fff; stroke-width: 2.29px"
-              transform="matrix(.875 0 0 .875 4.563 -.625)"
-            ></circle>
-            <path
-              d="M86 181c0-3.863 3.137-7 7-7s7 3.137 7 7"
-              style="fill: none; stroke: #fff; stroke-width: 2px"
-              transform="translate(-81 -163)"
-            ></path>
-            <path
-              d="M104 168v6m3-3-3 3-3-3"
-              style="
-                fill: none;
-                fill-rule: nonzero;
-                stroke: #fff;
-                stroke-width: 2px;
-              "
-              transform="translate(-92 -152)"
-            ></path>
-          </svg>
+        ><div
+          class="icon iconColor"
+          style="display: flex; justify-content: center; align-items: center"
+        >
+          <i
+            style="font-size: 25px; padding: 0px"
+            class="fa-solid fa-download"
+          ></i>
         </div>
-        <p class="iconColor">Save Contact</p></a
+        <p class="iconColor" style="font-size: 18px">Save Contact</p></a
       >
       <div class="actions">
         <div class="actionsC">
@@ -345,26 +333,18 @@
               rel="noopener noreferrer"
               aria-label="Mobile"
               style="background-color: rgb(207, 83, 54)"
-              ><div class="icon iconColor">
-                <svg
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                  xml:space="preserve"
-                  style="
-                    fill-rule: evenodd;
-                    clip-rule: evenodd;
-                    stroke-linecap: round;
-                    stroke-linejoin: round;
-                    stroke-miterlimit: 2;
-                  "
-                >
-                  <path style="fill: none" d="M0 0h24v24H0z"></path>
-                  <path
-                    d="M11.5 22a.952.952 0 0 1-1.052.945c-4.358-.544-7.851-4.338-8.379-8.39a.938.938 0 0 1 .936-1.046c.399-.009.847-.009 1.202-.009.388 0 .738.237.882.597l.478 1.196a.95.95 0 0 1-.21 1.025l-.107.107a.951.951 0 0 0-.181 1.091c.495.825 1.59 1.92 2.425 2.396a.927.927 0 0 0 1.066-.177c.05-.02.086-.056.122-.092a.95.95 0 0 1 1.025-.21l1.196.478c.36.144.597.494.597.882V22Z"
-                    style="fill: none; stroke: #fff; stroke-width: 0.95px"
-                    transform="translate(-2.21 -26.421) scale(2.10526)"
-                  ></path>
-                </svg></div
+              ><div
+                class="icon iconColor"
+                style="
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                "
+              >
+                <i
+                  style="font-size: 30px"
+                  class="fa-sharp fa-solid fa-phone"
+                ></i></div
             ></a>
             <p class="textColor">Mobile</p>
           </div>
@@ -377,36 +357,18 @@
               rel="noopener noreferrer"
               aria-label="Email"
               style="background-color: rgb(207, 83, 54)"
-              ><div class="icon iconColor">
-                <svg
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                  xml:space="preserve"
-                  style="
-                    fill-rule: evenodd;
-                    clip-rule: evenodd;
-                    stroke-linecap: round;
-                    stroke-linejoin: round;
-                    stroke-miterlimit: 2;
-                  "
-                >
-                  <path style="fill: none" d="M0 0h24v24H0z"></path>
-                  <path
-                    d="M22 33.75c0-.966-.896-1.75-2-1.75H4c-1.104 0-2 .784-2 1.75v10.5c0 .966.896 1.75 2 1.75h16c1.104 0 2-.784 2-1.75v-10.5Z"
-                    style="fill: none; stroke: #fff; stroke-width: 1.86px"
-                    transform="matrix(1 0 0 1.14286 0 -32.571)"
-                  ></path>
-                  <path
-                    d="m18 7.042-6 2.625-6-2.625"
-                    style="
-                      fill: none;
-                      fill-rule: nonzero;
-                      stroke: #fff;
-                      stroke-width: 1.86px;
-                    "
-                    transform="matrix(1 0 0 1.14286 0 1.952)"
-                  ></path>
-                </svg></div
+              ><div
+                class="icon iconColor"
+                style="
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                "
+              >
+                <i
+                  style="font-size: 30px"
+                  class="fa-solid fa-envelope"
+                ></i></div
             ></a>
             <p class="textColor">Email</p>
           </div>
@@ -419,50 +381,18 @@
               aria-label="Website"
               href=""
               style="background-color: rgb(207, 83, 54)"
-              ><div class="icon iconColor">
-                <svg
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                  xml:space="preserve"
-                  style="
-                    fill-rule: evenodd;
-                    clip-rule: evenodd;
-                    stroke-linecap: round;
-                    stroke-linejoin: round;
-                    stroke-miterlimit: 2;
-                  "
-                >
-                  <g>
-                    <path style="fill: none" d="M0 0h24v24H0z"></path>
-                    <clipPath id="a"><path d="M0 0h24v24H0z"></path></clipPath>
-                    <g clip-path="url(#a)">
-                      <circle
-                        cx="12"
-                        cy="12"
-                        r="10"
-                        style="fill: none; stroke: #fff; stroke-width: 2px"
-                      ></circle>
-                      <ellipse
-                        cx="40"
-                        cy="40"
-                        rx="4"
-                        ry="10"
-                        style="
-                          fill: none;
-                          stroke: #fff;
-                          stroke-width: 2px;
-                          stroke-linejoin: miter;
-                        "
-                        transform="translate(-28 -28)"
-                      ></ellipse>
-                      <path
-                        d="M40 50s-2-4-2-10 2-10 2-10"
-                        style="fill: none; stroke: #fff; stroke-width: 2px"
-                        transform="rotate(-90 11.5 39.5)"
-                      ></path>
-                    </g>
-                  </g>
-                </svg></div
+              ><div
+                class="icon iconColor"
+                style="
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                "
+              >
+                <i
+                  style="font-size: 30px"
+                  class="fa-sharp fa-solid fa-globe"
+                ></i></div
             ></a>
             <p class="textColor">Website</p>
           </div>
@@ -470,7 +400,9 @@
       </div>
       <div class="actions secondary"></div>
       <div class="featured">
-        <h2 class="section textColor">Glass &amp; Aluminium Work</h2>
+        <h2 style="font-size: 30px" class="section textColor">
+          Glass &amp; Aluminium Work
+        </h2>
         <div>
           <div class="media image" style="background-color: rgb(255, 255, 255)">
             <div>
@@ -585,7 +517,7 @@
         </div>
       </div>
       <div class="featured">
-        <h2 class="section textColor">Location</h2>
+        <h2 style="font-size: 30px" class="section textColor">Location</h2>
         <div>
           <div
             class="media embedded"
@@ -606,7 +538,9 @@
                 alt="Product image"
               />
               <div class="controls cardColor">
-                <p class="title">Make Payment using this QR Code</p>
+                <p style="font-size: 25px" class="title">
+                  Make Payment using this QR Code
+                </p>
               </div>
             </div>
             <!---->
@@ -616,6 +550,7 @@
       </div>
     </main>
     <!---->
+
     <script src="./qrcode.min.js"></script>
     <script>
       let m = document.getElementById("modal"),
